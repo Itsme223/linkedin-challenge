@@ -7,6 +7,7 @@
 		<title>Linked In</title>
 		<link href="./styles/main.css" rel="stylesheet" />
 		<link href="./styles/global.css" rel="stylesheet" />
+
 	</head>
 
 	<body>
@@ -15,23 +16,25 @@
 			<div class="nav__logo">
 				<img src="./assets/images/In-White-128.png" />
 			</div>
-			<div class="nav__username">Tevin Pilgrim</div>
+			<div class="nav__username data-username">Tevin Pilgrim</div>
 		</nav>
 		<!--- Main Container-->
 		<main class="container">
 			<section class="left-container">
 				<section class="profile-card">
 					<div class="profile-card__img">
-						<img src="./assets/images/headshot.jpg" />
+						<img class="data-profilePic" src="./assets/images/headshot.jpg">
 					</div>
-					<div class="profile-card__title">Tevin Pilgrim, Software Engineer</div>
+					<div class="profile-card__title">
+						<span class="data-username"> Tevin Pilgrim</span>, <span class="data-jobtitle">Software Engineer</span>
+					</div>
 				</section>
 			</section>
 			<section class="right-container">
 				<section class="start-post">
 					<div class="start-post-user">
 						<div class="start-post-user__img">
-							<img src="./assets/images/headshot.jpg" />
+							<img class="data-profilePic" src="./assets/images/headshot.jpg"/>
 						</div>
 						<div class="start-post-user__text">
 							<input type="text" placeholder="Start Post" />
@@ -77,8 +80,12 @@
 						</div>
 						<div class="posts__like"><button>Like</button></div>
 					</div>
+					
 				</section>
 			</section>
 		</main>
+		<script>
+			<script src="./">
+		</script>
 	</body>
 </html>
