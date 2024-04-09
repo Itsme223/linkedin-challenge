@@ -2,7 +2,7 @@
 const userProfile = {
     username: "Tevin Pilgrim-Hampden",
     jobTitle: "Software Engineer",
-    profilePic: "./assets/images/headshot.jpg"
+    profilePic: "./assets/images/headshot.jpg",
 };
 
 // const loadUserProfile = (userProfile)

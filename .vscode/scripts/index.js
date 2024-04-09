@@ -17,8 +17,8 @@ const loadUserProfile = () => {
     }
 };
 
-//3.Add click event on GamepadButton, call function createPost, Get 2 information:Username, posts
-//Get username: selevt a dome element, get data from the element, get post data
+//3.Add click event, call function createPost, Get 2 information:Username, posts
+//Get username: select a dome element, get data from the element, get post data
 
 const createPost = () => {
     const username = document.querySelector(".data-username").innerHTML;
@@ -33,15 +33,12 @@ const createPost = () => {
         //Create 3 children:posts__usernamem posts__content, posts__like
         //Add them to the postsItemDiv
         const postsUsernameDiv = document.createElement("div");
-
         postsUsernameDiv.classList.add("posts__username");
 
-        postsUsernameDiv,innerText = username + " Posted";
-
+        postsUsernameDiv.innerText = username + " Posted";
         const postsContentDiv = document.createElement("div");
 
         postsContentDiv.classList.add("posts__content");
-
         const postcontent = document.createElement("p");
         postcontent.innerHTML = post;
 
@@ -51,18 +48,17 @@ const createPost = () => {
 
         postsLikeDiv.classList.add("posts__like");
         //Follow the same
-        postsItemDiv.append(postUsernameDiv);
+        postsItemDiv.append(postsUsernameDiv);
         postsItemDiv.append(postsContentDiv);
         postsItemDiv.append(postsLikeDiv);
 
         //append this div to parent: section : posts
-        parentDiv.prepend(postsItemDiv); }
+        parentDiv.prepend(postsItemDiv) }
         else {
             //empty post
         alert("Error: You have empty post");
-        }
-
-    };
+        
+    }
 
 };
 
