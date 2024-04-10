@@ -7,7 +7,7 @@ const loadUserProfile = () => {
 
     //2. Manipulate and assign new data iterate through usernameElems
     for (let el of usernameElems) {
-        el.innerHTML = userProfile.username;
+        el.innerHTML = userProfile.usernameElems;
     }
 
     jobTitleElem.innerHTML = userProfile.jobTitle;
@@ -23,7 +23,7 @@ const loadUserProfile = () => {
 const createPost = () => {
     const username = document.querySelector(".data-username").innerHTML;
     const post = document.querySelector(".data-post").value;
-    console.log("username, post", username,post);
+    console.log("username, post", username, post);
 
     if (post) {
         const parentDiv = document.querySelector(".posts");

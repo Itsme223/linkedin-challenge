@@ -4,3 +4,4 @@ const userProfile = {
     jobTitle: "Software Engineer",
     profilePic: "./assets/images/headshot.jpg"
 };
+
